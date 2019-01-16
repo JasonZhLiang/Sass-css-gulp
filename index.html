@@ -4,11 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>My Sass Site</title>
     <link href="./css/styles.css" rel="stylesheet">
 </head>
-<body>
-    Anything random here.
-    more random stuff aaaa
+<body class="site single">
+
+    <!--BEM block element modifier  __ for element -- for modifier-->
+    <!--.site-->
+    <!--.site__header-->
+    <!--.site__main-->
+
+    <!--.article-->
+    <!--.article&#45;&#45;single-->
+
+    <!--HEADER-->
+    <header id="site__header"></header>
+
+    <!--MAIN-->
+    <main id="site__main">
+        <!--ARTICLE-->
+        <article class="article article--single">
+            <header class="article__header">
+                <h1>Getting Started with Brunch</h1>
+                <div class="byline">
+                    <div class="byline__box byline__author">
+                        Chris (@chris)
+                    </div>
+                    <div class="byline__box byline__time">
+                        <time>January 1, 2019</time>
+                    </div>
+                </div>
+            </header>
+            <!--<div class="article__image">-->
+                <!--<img src="https://scotch-res.cloudinary.com/image/upload/dpr_1,w_1050,q_auto:good,f_auto/media/1/6ZoijxwAThqbwdOIcxQS_getting-started-with-brunch.png.jpg" alt="scotch">-->
+            <!--</div>-->
+            <!--<div class="actions">-->
+                <!--<a href="#" class="action__btn action__btn&#45;&#45;code">View Code</a>-->
+                <!--<a href="#" class="action__btn action__btn&#45;&#45;demo">View Demo</a>-->
+            <!--</div>-->
+            <!--<div class="article__inner">-->
+                <!--<aside class="sidebar">-->
+                    <!--<ul class="table-of-contents">-->
+                        <!--<li><a href="#">Introduction</a></li>-->
+                        <!--<li><a href="#">Getting Started</a></li>-->
+                        <!--<li><a href="#">Implementing</a></li>-->
+                        <!--<li><a href="#">Building</a></li>-->
+                        <!--<li><a href="#">Conclusion</a></li>-->
+                    <!--</ul>-->
+                    <!--<div class="ad">-->
+                        <!--<img src="http://placekitten.com/g/300/250" alt="">-->
+                    <!--</div>-->
+                <!--</aside>-->
+                <div class="article__content content">
+                    <p class="fadeIn wait-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum doloremque earum eveniet ex, ipsum maiores minima nostrum placeat quas quisquam repellendus, saepe ullam? Autem dolores ea ipsum obcaecati placeat.</p>
+                    <p class="fadeIn wait-3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum doloremque earum eveniet ex, ipsum maiores minima nostrum placeat quas quisquam repellendus, saepe ullam? Autem dolores ea ipsum obcaecati placeat.</p>
+                </div>
+        </article>
+    </main>
+
+
+    <!--FOOTER-->
+    <footer id="site__footer">
+
+    </footer>
+
 </body>
 </html>

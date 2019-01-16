@@ -1,5 +1,126 @@
-$primary-color:#1a1a1a;
-body{
-  background:$primary-color;
-  color:red;
+$primary-color:#1ce;
+
+//reset ==================
+*{
+  box-sizing:border-box;
 }
+html{
+  overflow-y:scroll;
+  margin:0;
+  padding:0;
+}
+
+//base styles =============
+body{
+  background:#efefef;
+  font-size:19px;
+  color:#333;
+  line-height: 1.5;
+  //font-family:'Helvetica Neue', Arial, Helevetica, sans-serif;
+  font-family:monospace;
+  margin:0;
+  padding:0;
+}
+
+//header ===============
+#site__header{
+  background:#222;
+  height:80px;
+}
+
+//footer ===============
+#site__footer{
+  background:#222;
+  height:80px;
+}
+
+//main content ===============
+#site__main{
+  width:1200px;
+  margin: 50px auto;
+}
+
+//article ===================
+.article{
+  .article__header{
+    text-align: center;
+    margin-bottom: 30px;
+    h1{
+      font-size: 60px;
+      margin:0 0 15px;
+    }
+  }
+
+  .article__image{
+    text-align: center;
+    img{
+      max-width:100%;
+    }
+  }
+
+  .article__footer{
+
+  }
+}
+
+//byline ===================
+.byline{
+  color:#777;
+  text-align: center;
+  .byline__box{
+    display:inline-block;
+    margin-right:10px;
+    &:last-child{//sass using & point to the parent of children element
+      margin-right:0
+    }
+    //&:hover{
+    //
+    //}
+  }
+  //.byline_box:last-child{//this is a traditional way, using sudo element
+  //  margin-right:0
+  //}
+//sass provide a easy way to nes
+}
+
+
+
+/***********************practice Illusion of typed text************/
+h1 {
+  animation: type 2s steps(27), blink .9s infinite alternate;
+  /*24 means there are 27 characters in h1 line includes spaces*/
+  overflow: hidden;
+  white-space: nowrap;
+  /*width: 800px; we can specify the width with how many of characters*/
+  width:27ch;
+  border-right: 3px solid; }
+
+@keyframes type {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
+.fadeIn{
+  animation: fadeIn 1s;
+  animation-fill-mode: both;//how should we performace this property before and after
+}
+
+.wait-2s{
+  animation-delay: 2s;
+}
+
+.wait-3s{
+  animation-delay: 3s;
+}
+
+
+@keyframes fadeIn {
+  from{
+    opacity:0;}
+  to {
+    opacity:1;}
+}
+/**************************************************/
